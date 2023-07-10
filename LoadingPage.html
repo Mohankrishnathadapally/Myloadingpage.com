@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LoadingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>LoadingPage</title>
+</head>
+<body>
+    <!--header section-->
+    <header>
+        <nav>
+            <a href="index.html"><img src="" alt="" srcset=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>                        
+                </ul>
+            </div>
+        </nav>
+        <section class="main">
+            <p>The joy of home wherever you go</p>
+            <p>
+                <form class="search">
+                    <label for="search" ></label>
+                    <input id="search" type="search" placeholder="where to go...">
+                    <button>search</button>
+                </form>
+            </p>
+            <a class="visit" href="#">Vist Us to know more</a>
+        </section>
+    </header>
+    <!-- body of web -->
+    <section class="body">
+        <div class="body-heading">
+            <h1>Trending destinations</h1>
+            <p>Most popular choices for travellers from India</p>
+        </div>
+        <div class="row">
+            <div class = "col">
+                <div class="container">
+                    <a href="#"><img src="hyderabad.jpg" class="images"></a>
+                    <div class="overlay">Hyderabad</div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="container">
+                    <a href="#"><img src="mumbai.jpg" class="images"></a>
+                    <div class="overlay">Mumbai</div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="container">
+                    <a href="#"><img src="goa.jpg" class="images"></a>
+                    <div class="overlay">Goa</div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="container">
+                    <a href="#"><img src="arga.jpg" class="images"></a>
+                    <div class="overlay">Arga</div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="container">
+                    <a href="#"><img src="ooty.jpg" class="images"></a>
+                    <div class="overlay">Ooty</div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class="container">
+                    <a href="#"><img src="manali.jpg" class="images"></a>
+                    <div class="overlay">Manali</div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <!--Contact section -->
+    <section class="contact">
+        <div class="con">
+            <div class="right">
+                <div class="form" id="form">
+                    <form>
+                        <label for="fname">First Name</label><br>
+                        <input id="fname" type="text" placeholder="Your name..."><br><br>
+                        <label for="lname">Last Name</label><br>
+                        <input id="lname" type="text" placeholder="Last name..."><br><br>
+                        <label for="number">Contact Number</label><br>
+                        <input id="number" type="tel" placeholder="Number"><br><br>
+                        <label for="email">Email</label><br>
+                        <input id="email" type="email" placeholder="Your email..."><br><br>
+                        <input value="Submit" type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="left">
+                <div class="fafa">
+                    <a href="#"><i class="fa fa-facebook-square"></i>facebook</a><br>
+                    <a href="#"><i class="fa fa-instagram"></i>instagram</a><br>
+                    <a href="#"><i class="fa fa-twitter"></i>twitter</a><br>
+                    <a href="#"><i class="fa fa-envelope"></i>email</a><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer section-->
+    <footer class="footer">
+        <h3>About Us</h3>
+        <p>Welcome to our tourist website! We are dedicated to providing you with the best travel experiences and helping you discover new destinations.<br> Whether you're looking for adventurous outdoor activities, cultural landmarks, or breathtaking natural beauty, we have it all covered. Our team of experienced travel enthusiasts is here to assist you in planning your dream vacation. Browse through our carefully curated collection of destinations and let us inspire your next adventure.<br> We strive to make your journey memorable and unforgettable. Start exploring the world with us!</p>
+        <p>&copy; 2023 My Page. All rights reserved.</p>
+    </footer>
+    <script>
+        function hideMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.style.display = "none";
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
